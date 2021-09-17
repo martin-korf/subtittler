@@ -1,0 +1,11 @@
+#!/bin/bash
+cd "$1"
+
+find . -name '*_Czech.srt' -print0 | 
+    while IFS= read -r -d '' line; do 
+       #echo "$line"
+      # new_name=$(grep -oP '(?<=\/)(.*?)(?=\/)' $line)
+      new_name=$(echo $line|awk -F/ '{print $3}')  
+      #echo $new_name
+      cp $line ./$new_name.srt
+    done
