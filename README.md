@@ -175,7 +175,10 @@ Example:
         ├── 8_Italian.srt
         └── 9_Spanish.srt
 ```
-Instalation is quite basic: you just need copy the script to /usr/local/bin/ and for sure make the script executable: chmod +x /usr/local/bin/subtittler , change the language you want to move- line 4 (Im looking for __Czech.srt_ )
+Instalation is quite basic: you just need copy the script to /usr/local/bin/ and for sure make the script executable: ```bash
+chmod +x /usr/local/bin/subtittler
+```
+, change the language you want to move- line 4 (Im looking for __Czech.srt_ )
 
 Then you can start it like this:
 
